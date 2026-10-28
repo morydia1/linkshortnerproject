@@ -1,4 +1,4 @@
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { SignUpButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import { Link2, MousePointerClick, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
@@ -63,11 +63,6 @@ export default function Home() {
           <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
             <Button size="lg">Get started</Button>
           </SignUpButton>
-          <SignInButton mode="modal" forceRedirectUrl="/dashboard">
-            <Button size="lg" variant="outline">
-              Sign in
-            </Button>
-          </SignInButton>
         </div>
       </section>
       <section className="grid w-full max-w-4xl gap-4 sm:grid-cols-3">

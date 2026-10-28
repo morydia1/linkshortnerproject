@@ -41,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <ClerkProvider
           appearance={{ theme: shadcn }}
           signInUrl="/"
-          signUpUrl="/"
+          signUpUrl="/" 
         >
           <header className="flex h-16 items-center justify-between gap-4 p-4">
             <Link href="/" className="text-lg font-semibold tracking-tight">
